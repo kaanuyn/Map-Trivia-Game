@@ -12,6 +12,8 @@ public class QuizManager : MonoBehaviour
 
     public GameObject Quizpanel;
     public GameObject GoPanel;
+    public GameObject Secimpanel;
+
 
     public Text QuestionTxt;
     public Text ScoreTxt;
@@ -21,11 +23,11 @@ public class QuizManager : MonoBehaviour
 
     private void Start()
     {
-        Quizpanel.SetActive(true);
+        Secimpanel.SetActive(true);
+        //Quizpanel.SetActive(true);
         totalQuestions = QnA.Count;
         GoPanel.SetActive(false);
 
-        generateQuestion();
     }
 
     public void retry()
@@ -58,39 +60,7 @@ public class QuizManager : MonoBehaviour
     IEnumerator waitForNext()
     {
         yield return new WaitForSeconds(1);
-        generateQuestion();
     }
 
-    void SetAnswers()
-    {
-        for (int i = 0; i < options.Length; i++)
-        {
-            options[i].GetComponent<Image>().color = Color.grey;
-            options[i].GetComponent<AnswerScript>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
-            
-            if(QnA[currentQuestion].CorrectAnswer == i+1)
-            {
-                options[i].GetComponent<AnswerScript>().isCorrect = true;
-            }
-        }
-    }
 
-    void generateQuestion()
-    {
-        if(QnA.Count > 0)
-        {
-            currentQuestion = Random.Range(0, QnA.Count);
-
-            QuestionTxt.text = QnA[currentQuestion].Question;
-            SetAnswers();
-        }
-        else
-        {
-            Debug.Log("Out of Questions");
-            GameOver();
-        }
-
-
-    }
 }

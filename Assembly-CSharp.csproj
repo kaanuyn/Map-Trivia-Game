@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3D2673A5-FE48-713A-E466-85258327427A}</ProjectGuid>
+    <ProjectGuid>{4FC51046-2003-D22E-7B80-DD58A4CC964F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,6 +60,20 @@
      <Compile Include="Assets\Scripts\Manager\AnswerScript.cs" />
      <Compile Include="Assets\Scripts\Manager\QuestionAndAnswers.cs" />
      <Compile Include="Assets\Scripts\Manager\QuizManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\bolgemanager\akdeniz.cs" />
+     <Compile Include="Assets\Scripts\Manager\bolgemanager\dogu.cs" />
+     <Compile Include="Assets\Scripts\Manager\bolgemanager\ege.cs" />
+     <Compile Include="Assets\Scripts\Manager\bolgemanager\guneydogu.cs" />
+     <Compile Include="Assets\Scripts\Manager\bolgemanager\ic.cs" />
+     <Compile Include="Assets\Scripts\Manager\bolgemanager\karadeniz.cs" />
+     <Compile Include="Assets\Scripts\Manager\bolgemanager\marmara.cs" />
+     <Compile Include="Assets\Scripts\Manager\cevapscript\akdenizcevap.cs" />
+     <Compile Include="Assets\Scripts\Manager\cevapscript\dogucevap.cs" />
+     <Compile Include="Assets\Scripts\Manager\cevapscript\egecevap.cs" />
+     <Compile Include="Assets\Scripts\Manager\cevapscript\guneydogucevap.cs" />
+     <Compile Include="Assets\Scripts\Manager\cevapscript\iccevap.cs" />
+     <Compile Include="Assets\Scripts\Manager\cevapscript\karadenizcevap.cs" />
+     <Compile Include="Assets\Scripts\Manager\cevapscript\marmaracevap.cs" />
      <Compile Include="Assets\Scripts\Title\QuitButton.cs" />
      <Compile Include="Assets\Scripts\Title\StartButton.cs" />
  <Reference Include="UnityEngine">
@@ -591,38 +605,34 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/kaanu/maptrivia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/kaanu/Unity Hub/maptrivia/Map-Trivia-Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{F2C333DF-6D0F-5C32-348B-85FA39836C4C}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
