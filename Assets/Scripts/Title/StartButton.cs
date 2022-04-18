@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class StartButton : MonoBehaviour, IPointerClickHandler
+public class StartButton : MonoBehaviour
 {
-    public void OnPointerClick(PointerEventData eventData) 
+    public void LoadGame()
     {
-        SceneManager.LoadScene("Game"); 
+        SceneManager.LoadScene("Game");
     }
 }

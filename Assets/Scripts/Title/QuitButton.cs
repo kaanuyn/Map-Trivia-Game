@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class QuitButton : MonoBehaviour, IPointerClickHandler
+public class QuitButton : MonoBehaviour
 {
-    public void OnPointerClick(PointerEventData eventData) 
+    public void QuitGame()
     {
         Application.Quit();
+        Debug.Log("Quit!");
+
     }
 }
