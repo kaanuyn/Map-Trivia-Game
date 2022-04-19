@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CustomQuiz\Correction.cs" />
      <Compile Include="Assets\Scripts\CustomQuiz\InputScript.cs" />
      <Compile Include="Assets\Scripts\Manager\AnswerScript.cs" />
      <Compile Include="Assets\Scripts\Manager\QuestionAndAnswers.cs" />

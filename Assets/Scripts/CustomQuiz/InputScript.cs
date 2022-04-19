@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class InputScript : MonoBehaviour
 {
-    public InputField iField;
+    InputField iField;
     private string Question;
     public string[] Answers;
     public int CorrectAnswer;
